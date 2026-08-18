@@ -1,0 +1,36 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Customer/runtime data
+rapporter/
+debug/
+debug_log.txt
+cached_gpt_report.txt
+manual_key_figures.json
+assistants_by_customer.json
+threads_by_customer.json
+*.log
+*.csv
+*.pdf
+*.docx
+
+# Accounting files: never commit real SIE data
+sie-filer/*.se
+!sie-filer/example_2023.se
+!sie-filer/example_2024.se
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
